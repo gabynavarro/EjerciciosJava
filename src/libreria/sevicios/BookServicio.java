@@ -80,7 +80,7 @@ public class BookServicio {
             //Dejo independiente el SET de cargar mascotas, no obligo q cuando se log cargue su mascota
              daoBook.guardarBook(b);
         } catch (Exception e) {
-            System.out.println("No se creeo el autor"+ e.getMessage());
+            System.out.println("No se creeo el Libro"+ e.getMessage());
         }
     
     
@@ -101,7 +101,7 @@ public class BookServicio {
             Collection<Book> books = listaBooks();      
             //Imprimimos los autors - Solo algunos atributos....
             if (books.isEmpty()) {
-                throw new Exception("No existen autors para imprimir");
+                throw new Exception("No existen Libros para imprimir");
             } else {
                 
                 for (Book u : books) {

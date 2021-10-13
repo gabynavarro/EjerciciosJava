@@ -22,7 +22,7 @@ public class AuthorServicio {
         try {
             //Validamos
             if (nombre == null || nombre.trim().isEmpty()) {
-                throw new Exception("Debe indicar nombre");    
+                throw new Exception("Debe indicar nombre Autor");    
             //Creamos el autor
             }
            Author a = new Author();
